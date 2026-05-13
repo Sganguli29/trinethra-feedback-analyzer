@@ -209,6 +209,13 @@ function extractJson(text) {
     throw new Error("Ollama did not return JSON. Please run analysis again.");
   }
 }
+app.get("/", (req, res) => {
+  res.json({
+    status: "ok",
+    message: "Supervisor Feedback Analyzer backend is running"
+  });
+});
+
 
 app.post("/api/analyze", async (req, res) => {
   try {
