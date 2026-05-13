@@ -94,7 +94,7 @@ function App() {
 
       <section className="card">
         <h2>Transcript Input</h2>
-        <p>Paste a supervisor transcript or load one of the sample cases.</p>
+        <p>Paste a supervisor transcript or load one of the sample cases. The AI output is a draft for review, not a final judgment.</p>
 
         <div className="sample-buttons">
           <button type="button" onClick={() => setTranscript(sampleTranscripts.karthik)}>
